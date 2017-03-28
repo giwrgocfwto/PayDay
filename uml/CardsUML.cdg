@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="paydaycards.models.cards">
+  <ClassDiagramComponents>
+    <Class name="CardPile" package="paydaycards.models.cards" visibility="public" xPosition="33.0" yPosition="8.0">
+      <Fields>
+        <Field name="cards" type="ArrayList&lt;Card&gt;" visibility="private"/>
+        <Field name="discarded" type="ArrayList&lt;Card&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getCards" returnType="ArrayList&lt;Card&gt;" visibility="public"/>
+        <Method name="getDiscarded" returnType="ArrayList&lt;Card&gt;" visibility="public"/>
+        <Method name="addCard" returnType="void" visibility="public">
+          <Argument type="Card" name="card"/>
+        </Method>
+        <Method name="shuffle" returnType="void" visibility="public"/>
+        <Method name="drawCard" returnType="Card" visibility="public"/>
+        <Method name="discardCard" returnType="void" visibility="public">
+          <Argument type="Card" name="card"/>
+        </Method>
+        <Method name="reshuffle" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="DealCard" package="paydaycards.models.cards" visibility="public" xPosition="46.0" yPosition="309.0">
+      <Fields>
+        <Field name="type" type="Type" visibility="private"/>
+        <Field name="message" type="String" visibility="private"/>
+        <Field name="cost" type="int" visibility="private"/>
+        <Field name="value" type="int" visibility="private"/>
+        <Field name="icon" type="Image" visibility="private"/>
+        <Field name="choice1" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="message"/>
+          <Argument type="int" name="cost"/>
+          <Argument type="int" name="value"/>
+          <Argument type="Image" name="icon"/>
+          <Argument type="String" name="choice1"/>
+          <Argument type="String" name="choice2"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getChoice1" returnType="String" visibility="public"/>
+        <Method name="setChoice1" returnType="void" visibility="public">
+          <Argument type="String" name="choice1"/>
+        </Method>
+        <Method name="getChoice2" returnType="String" visibility="public"/>
+        <Method name="setChoice2" returnType="void" visibility="public">
+          <Argument type="String" name="choice2"/>
+        </Method>
+        <Method name="setType" returnType="void" visibility="public">
+          <Argument type="Type" name="type"/>
+        </Method>
+        <Method name="getType" returnType="Type" visibility="public"/>
+        <Method name="setMessage" returnType="void" visibility="public">
+          <Argument type="String" name="message"/>
+        </Method>
+        <Method name="getMessage" returnType="String" visibility="public"/>
+        <Method name="setCost" returnType="void" visibility="public">
+          <Argument type="int" name="cost"/>
+        </Method>
+        <Method name="getCost" returnType="int" visibility="public"/>
+        <Method name="setValue" returnType="void" visibility="public">
+          <Argument type="int" name="value"/>
+        </Method>
+        <Method name="getValue" returnType="int" visibility="public"/>
+        <Method name="setImage" returnType="void" visibility="public">
+          <Argument type="Image" name="icon"/>
+        </Method>
+        <Method name="getImage" returnType="Image" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="MailCard" package="paydaycards.models.cards" visibility="public" xPosition="842.0" yPosition="31.0">
+      <Fields>
+        <Field name="type" type="Type" visibility="private"/>
+        <Field name="message" type="String" visibility="private"/>
+        <Field name="choice" type="String" visibility="private"/>
+        <Field name="euro" type="int" visibility="private"/>
+        <Field name="image" type="Image" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Type" name="type"/>
+          <Argument type="String" name="message"/>
+          <Argument type="String" name="choice"/>
+          <Argument type="int" name="euro"/>
+          <Argument type="Image" name="image"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setType" returnType="void" visibility="public">
+          <Argument type="Type" name="type"/>
+        </Method>
+        <Method name="getType" returnType="Type" visibility="public"/>
+        <Method name="setMessage" returnType="void" visibility="public">
+          <Argument type="String" name="message"/>
+        </Method>
+        <Method name="getMessage" returnType="String" visibility="public"/>
+        <Method name="setChoice" returnType="void" visibility="public">
+          <Argument type="String" name="choice"/>
+        </Method>
+        <Method name="getChoice" returnType="String" visibility="public"/>
+        <Method name="setImage" returnType="void" visibility="public">
+          <Argument type="Image" name="image"/>
+        </Method>
+        <Method name="getImage" returnType="Image" visibility="public"/>
+        <Method name="setEuro" returnType="void" visibility="public">
+          <Argument type="int" name="euro"/>
+        </Method>
+        <Method name="getEuro" returnType="int" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="Card" package="paydaycards.models.cards" visibility="public" xPosition="454.0" yPosition="18.0">
+      <Methods>
+        <Method name="setType" returnType="void" visibility="public">
+          <Argument type="Type" name="type"/>
+        </Method>
+        <Method name="getType" returnType="Type" visibility="public"/>
+        <Method name="setMessage" returnType="void" visibility="public">
+          <Argument type="String" name="message"/>
+        </Method>
+        <Method name="getMessage" returnType="String" visibility="public"/>
+        <Method name="setImage" returnType="void" visibility="public">
+          <Argument type="Image" name="image"/>
+        </Method>
+        <Method name="getImage" returnType="Image" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Enum name="Type" package="paydaycards.models.cards" visibility="public" xPosition="644.0" yPosition="232.0">
+      <Literals>
+        <Literal name="PayTheNeighbor"/>
+        <Literal name="MadMoney"/>
+        <Literal name="Charity"/>
+        <Literal name="Bill"/>
+        <Literal name="MoveToDealBuyer"/>
+        <Literal name="Advertisement"/>
+        <Literal name="Deal"/>
+      </Literals>
+    </Enum>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="type" source="paydaycards.models.cards.DealCard" target="paydaycards.models.cards.Type" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="discarded" source="paydaycards.models.cards.CardPile" target="paydaycards.models.cards.Card" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Card&gt;"/>
+    <HasRelation name="type" source="paydaycards.models.cards.MailCard" target="paydaycards.models.cards.Type" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="paydaycards.models.cards.MailCard" target="paydaycards.models.cards.Type" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="paydaycards.models.cards.CardPile" target="paydaycards.models.cards.Card" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="paydaycards.models.cards.DealCard" target="paydaycards.models.cards.Card"/>
+    <UseRelation source="paydaycards.models.cards.Card" target="paydaycards.models.cards.Type" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="paydaycards.models.cards.DealCard" target="paydaycards.models.cards.Type" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="paydaycards.models.cards.MailCard" target="paydaycards.models.cards.Card"/>
+    <HasRelation name="cards" source="paydaycards.models.cards.CardPile" target="paydaycards.models.cards.Card" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Card&gt;"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

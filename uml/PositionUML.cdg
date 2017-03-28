@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="paydaycards.models.position">
+  <ClassDiagramComponents>
+    <Class name="BuyDealCardPosition" package="paydaycards.models.position.cardposition" visibility="public" xPosition="1112.0" yPosition="315.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="performAction" returnType="void" visibility="public">
+          <Argument type="Player" name="p"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="CardPosition" package="paydaycards.models.position.cardposition" visibility="public" isAbstract="true" xPosition="650.0" yPosition="47.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="DealCardPosition" package="paydaycards.models.position.cardposition" visibility="public" isAbstract="true" xPosition="903.0" yPosition="240.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="MailCardPosition" package="paydaycards.models.position.cardposition" visibility="public" xPosition="874.0" yPosition="20.0">
+      <Fields>
+        <Field name="board" type="Board" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="setBoard" returnType="void" visibility="public">
+          <Argument type="Board" name="board"/>
+        </Method>
+        <Method name="getBoard" returnType="Board" visibility="public"/>
+        <Method name="performAction" returnType="void" visibility="public">
+          <Argument type="Player" name="p"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="SellDealCardPosition" package="paydaycards.models.position.cardposition" visibility="public" xPosition="1112.0" yPosition="48.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="performAction" returnType="void" visibility="public">
+          <Argument type="Player" name="p"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="DicePosition" package="paydaycards.models.position.diceposition" visibility="public" isAbstract="true" xPosition="345.0" yPosition="141.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="performAction" returnType="void" visibility="public">
+          <Argument type="Player" name="p"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="OnePlayerDicePosition" package="paydaycards.models.position.diceposition" visibility="public" xPosition="25.0" yPosition="354.0">
+      <Fields>
+        <Field name="type" type="TypeDicePosition" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="TypeDicePosition" name="type"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getType" returnType="TypeDicePosition" visibility="public"/>
+        <Method name="setType" returnType="void" visibility="public">
+          <Argument type="TypeDicePosition" name="type"/>
+        </Method>
+        <Method name="performAction" returnType="void" visibility="public">
+          <Argument type="Player" name="p"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="TwoPlayerDicePosition" package="paydaycards.models.position.diceposition" visibility="public" xPosition="584.0" yPosition="354.0">
+      <Fields>
+        <Field name="type" type="TypeDicePosition" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="TypeDicePosition" name="type"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getType" returnType="TypeDicePosition" visibility="public"/>
+        <Method name="setType" returnType="void" visibility="public">
+          <Argument type="TypeDicePosition" name="type"/>
+        </Method>
+        <Method name="performAction" returnType="void" visibility="public">
+          <Argument type="Player" name="p"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="PayDayPosition" package="paydaycards.models.position" visibility="public" xPosition="45.0" yPosition="185.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="performAction" returnType="void" visibility="public">
+          <Argument type="Player" name="p"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="SundayFootballMatchPosition" package="paydaycards.models.position" visibility="public" xPosition="25.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="performAction" returnType="void" visibility="public">
+          <Argument type="Player" name="p"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="Position" package="paydaycards.models.position" visibility="public" xPosition="295.0" yPosition="3.0">
+      <Methods>
+        <Method name="performAction" returnType="void" visibility="public">
+          <Argument type="Player" name="p"/>
+        </Method>
+      </Methods>
+    </Interface>
+    <Enum name="TypeDicePosition" package="paydaycards.models.position.diceposition" visibility="public" xPosition="388.0" yPosition="396.0">
+      <Literals>
+        <Literal name="Sweepstakes"/>
+        <Literal name="Lottery"/>
+        <Literal name="RadioContest"/>
+        <Literal name="FamilyCasinoNight"/>
+        <Literal name="YardSale"/>
+      </Literals>
+    </Enum>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="paydaycards.models.position.cardposition.MailCardPosition" target="paydaycards.models.position.cardposition.CardPosition"/>
+    <HasRelation name="type" source="paydaycards.models.position.diceposition.OnePlayerDicePosition" target="paydaycards.models.position.diceposition.TypeDicePosition" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="paydaycards.models.position.diceposition.TwoPlayerDicePosition" target="paydaycards.models.position.diceposition.DicePosition"/>
+    <UseRelation source="paydaycards.models.position.diceposition.OnePlayerDicePosition" target="paydaycards.models.position.Position" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="paydaycards.models.position.diceposition.DicePosition" target="paydaycards.models.position.Position"/>
+    <IsRelation name="is" source="paydaycards.models.position.diceposition.OnePlayerDicePosition" target="paydaycards.models.position.diceposition.DicePosition"/>
+    <IsRelation name="is" source="paydaycards.models.position.cardposition.DealCardPosition" target="paydaycards.models.position.cardposition.CardPosition"/>
+    <IsRelation name="is" source="paydaycards.models.position.cardposition.BuyDealCardPosition" target="paydaycards.models.position.cardposition.DealCardPosition"/>
+    <HasRelation name="type" source="paydaycards.models.position.diceposition.TwoPlayerDicePosition" target="paydaycards.models.position.diceposition.TypeDicePosition" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="paydaycards.models.position.diceposition.TwoPlayerDicePosition" target="paydaycards.models.position.Position" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="paydaycards.models.position.SundayFootballMatchPosition" target="paydaycards.models.position.Position"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="paydaycards.models.position.PayDayPosition" target="paydaycards.models.position.Position"/>
+    <IsRelation name="is" source="paydaycards.models.position.cardposition.SellDealCardPosition" target="paydaycards.models.position.cardposition.DealCardPosition"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="paydaycards.models.position.cardposition.CardPosition" target="paydaycards.models.position.Position"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

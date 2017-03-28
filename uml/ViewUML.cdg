@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="paydaycards.views">
+  <ClassDiagramComponents>
+    <Class name="PositionHolder" package="paydaycards.views" visibility="public" xPosition="1019.0" yPosition="53.0">
+      <Fields>
+        <Field name="panel" type="JPanel" visibility="public"/>
+        <Field name="dayLabel" type="JLabel" visibility="public"/>
+        <Field name="iconLabel" type="JLabel" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="JPanel" name="panel"/>
+          <Argument type="JLabel" name="dayLabel"/>
+          <Argument type="JLabel" name="iconLabel"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="GameView" package="paydaycards.views" visibility="public" xPosition="34.0" yPosition="37.0">
+      <Fields>
+        <Field name="cldr" type="ClassLoader" visibility="private"/>
+        <Field name="holders" type="PositionHolder[]" visibility="private"/>
+        <Field name="playerMoveAction" type="MoveAction" visibility="private"/>
+        <Field name="numberSelectionAction" type="NumberSelectionAction" visibility="private"/>
+        <Field name="playerAcceptedAction" type="ChoiceAction" visibility="private"/>
+        <Field name="betAction" type="BetAction" visibility="private"/>
+        <Field name="playerCardAction" type="CardAction" visibility="private"/>
+        <Field name="playerRolledDieAction" type="GameAction" visibility="private"/>
+        <Field name="Bills1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Bills2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="DealCards" type="javax.swing.JButton" visibility="private"/>
+        <Field name="DealCards1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="DealCards2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="Dice1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Dice2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Friday12" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Friday12Label" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Friday12Panel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Friday19" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Friday19Label" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Friday19Panel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Friday26" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Friday26Label" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Friday26Panel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Friday5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Friday5Label" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Friday5Panel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="InfoBox" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="InfoPanel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="JackPotEuro" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Jackpot" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Loan1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Loan2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="MailCards" type="javax.swing.JButton" visibility="private"/>
+        <Field name="MainLabel" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Monday1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Monday15" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Monday15Label" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Monday15Panel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Monday1Label" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Monday1Panel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Monday22" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Monday22Label" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Monday22Panel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Monday29" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Monday29Label" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Monday29Panel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Monday8" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Monday8Label" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Monday8Panel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Money1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Money2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Months" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Order" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="PayDayPanel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="PayDayPos" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Player1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Player2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="RollDice1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="RollDice2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="Saturday13" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Saturday13Label" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Saturday13Panel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Saturday20" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Saturday20Label" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Saturday20Panel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Saturday27" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Saturday27Label" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Saturday27Panel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Saturday6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Saturday6Label" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Saturday6Panel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Start" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="StartLabel" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Sunday14" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Sunday14Label" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Sunday14Panel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Sunday21" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Sunday21Label" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Sunday21Panel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Sunday28" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Sunday28Label" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Sunday28Panel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Sunday7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Sunday7Label" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Sunday7Panel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Thursday11" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Thursday11Label" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Thursday11Panel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Thursday18" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Thursday18Label" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Thursday18Panel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Thursday25" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Thursday25Label" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Thursday25Panel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Thursday4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Thursday4Label" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Thursday4Panel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Tuesday16" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Tuesday16Label" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Tuesday16Panel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Tuesday2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Tuesday23" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Tuesday23Label" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Tuesday23Panel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Tuesday2Label" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Tuesday2Panel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Tuesday30" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Tuesday30Label" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Tuesday30Panel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Tuesday9" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Tuesday9Label" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Tuesday9Panel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Turn" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Wednesday10" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Wednesday10Label" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Wednesday10Panel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Wednesday17" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Wednesday17Label" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Wednesday17Panel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Wednesday24" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Wednesday24Label" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Wednesday24Panel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Wednesday3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Wednesday31Label" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Wednesday3Label" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Wednesday3Panel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="controlPanel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="firstPlayerPanel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="pawn1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="pawn2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="secondPlayerPanel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="startPanel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="tsoxaPanel" type="javax.swing.JPanel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="doFreshStart" returnType="void" visibility="public">
+          <Argument type="Board" name="b"/>
+        </Method>
+        <Method name="setDieNumber" returnType="void" visibility="public">
+          <Argument type="Player" name="p"/>
+          <Argument type="int" name="dieRoll"/>
+        </Method>
+        <Method name="updatePlayerPosition" returnType="void" visibility="public">
+          <Argument type="Player" name="p"/>
+          <Argument type="int" name="die"/>
+        </Method>
+        <Method name="setPlayerMove" returnType="void" visibility="public">
+          <Argument type="MoveAction" name="action"/>
+        </Method>
+        <Method name="setNumberSelectionAction" returnType="void" visibility="public">
+          <Argument type="NumberSelectionAction" name="action"/>
+        </Method>
+        <Method name="requestNumber" returnType="void" visibility="public"/>
+        <Method name="setPlayerAccepted" returnType="void" visibility="public">
+          <Argument type="ChoiceAction" name="action"/>
+        </Method>
+        <Method name="selectDealCard" returnType="void" visibility="public"/>
+        <Method name="setBetAction" returnType="void" visibility="public">
+          <Argument type="BetAction" name="action"/>
+        </Method>
+        <Method name="requestBet" returnType="int" visibility="public"/>
+        <Method name="setCardAction" returnType="void" visibility="public">
+          <Argument type="Card" name="card"/>
+          <Argument type="CardAction" name="action"/>
+        </Method>
+        <Method name="showMailCard" returnType="int" visibility="public">
+          <Argument type="MailCard" name="card"/>
+        </Method>
+        <Method name="showDealCard" returnType="int" visibility="public">
+          <Argument type="DealCard" name="card"/>
+        </Method>
+        <Method name="setPlayerRolledDie" returnType="void" visibility="public">
+          <Argument type="Player" name="player"/>
+          <Argument type="GameAction" name="action"/>
+        </Method>
+        <Method name="disableDieButton" returnType="void" visibility="public">
+          <Argument type="Player" name="p"/>
+        </Method>
+        <Method name="disableMailCard" returnType="void" visibility="public"/>
+        <Method name="disableDealCard" returnType="void" visibility="public"/>
+        <Method name="setCashLabel" returnType="void" visibility="public">
+          <Argument type="Player" name="p"/>
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="setJackpotLabel" returnType="void" visibility="public">
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="setTurnLabel" returnType="void" visibility="public">
+          <Argument type="Player" name="p"/>
+        </Method>
+        <Method name="setMonthsLabel" returnType="void" visibility="public">
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="setBillsLabel" returnType="void" visibility="public">
+          <Argument type="Player" name="p"/>
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="setLoansLabel" returnType="void" visibility="public">
+          <Argument type="Player" name="p"/>
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="RollDiceActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="RollDice1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="DealCards1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="RollDice2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="DealCards2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="MailCardsActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="DealCardsActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="BetAction" package="paydaycards.views" visibility="public" xPosition="1011.0" yPosition="1433.0">
+      <Methods>
+        <Method name="performAction" returnType="void" visibility="package">
+          <Argument type="int" name="bet"/>
+        </Method>
+      </Methods>
+    </Interface>
+    <Interface name="CardAction" package="paydaycards.views" visibility="public" xPosition="770.0" yPosition="53.0">
+      <Methods>
+        <Method name="performAction" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="ChoiceAction" package="paydaycards.views" visibility="public" xPosition="860.0" yPosition="320.0">
+      <Methods>
+        <Method name="performAction" returnType="void" visibility="package">
+          <Argument type="boolean" name="accept"/>
+        </Method>
+      </Methods>
+    </Interface>
+    <Interface name="GameAction" package="paydaycards.views" visibility="public" xPosition="976.0" yPosition="606.0">
+      <Methods>
+        <Method name="performAction" returnType="void" visibility="package"/>
+      </Methods>
+    </Interface>
+    <Interface name="MoveAction" package="paydaycards.views" visibility="public" xPosition="1000.0" yPosition="916.0">
+      <Methods>
+        <Method name="performAction" returnType="void" visibility="package">
+          <Argument type="Player" name="p"/>
+        </Method>
+      </Methods>
+    </Interface>
+    <Interface name="NumberSelectionAction" package="paydaycards.views" visibility="public" xPosition="986.0" yPosition="1792.0">
+      <Methods>
+        <Method name="performAction" returnType="void" visibility="package">
+          <Argument type="int" name="numberSelected"/>
+        </Method>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="paydaycards.views.GameView" target="paydaycards.views.GameAction" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="paydaycards.views.GameView" target="paydaycards.views.MoveAction" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="paydaycards.views.GameView" target="paydaycards.views.ChoiceAction" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="paydaycards.views.GameView" target="paydaycards.views.BetAction" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="playerAcceptedAction" source="paydaycards.views.GameView" target="paydaycards.views.ChoiceAction" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="playerRolledDieAction" source="paydaycards.views.GameView" target="paydaycards.views.GameAction" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="paydaycards.views.GameView" target="paydaycards.views.NumberSelectionAction" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="numberSelectionAction" source="paydaycards.views.GameView" target="paydaycards.views.NumberSelectionAction" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="betAction" source="paydaycards.views.GameView" target="paydaycards.views.BetAction" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="paydaycards.views.GameView" target="paydaycards.views.CardAction" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="playerCardAction" source="paydaycards.views.GameView" target="paydaycards.views.CardAction" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="playerMoveAction" source="paydaycards.views.GameView" target="paydaycards.views.MoveAction" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
